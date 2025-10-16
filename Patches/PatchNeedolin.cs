@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using HarmonyLib;
-using HornetShermaSong.Extensions;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
-using Needleforge;
 using Silksong.FsmUtil;
 using Silksong.FsmUtil.Actions;
 using UnityEngine;

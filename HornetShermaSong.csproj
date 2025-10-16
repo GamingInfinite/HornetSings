@@ -20,7 +20,7 @@
 	<PropertyGroup>
 		<!--These properties will control the generated plugin info. Version is also used by various parts of the build system.-->
 		<AssemblyTitle>HornetShermaSong</AssemblyTitle>
-		<Version>0.1.0</Version>
+		<Version>0.2.0</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,8 +33,8 @@
 		<PackageReference Include="Hamunii.BepInEx.AutoPlugin" Version="2.0.1" PrivateAssets="all" />
 		<PackageReference Include="UnityEngine.Modules" Version="6000.0.50" IncludeAssets="compile" />
 		<!--If you're unable resolve this dependency, check that you're using the nuget v3 package feed instead of v2.-->
-		<PackageReference Include="Silksong.GameLibs" Version="1.1.0-silksong1.0.28714" />
-		<PackageReference Include="Silksong.FsmUtil" Version="0.1.0" />
+		<PackageReference Include="Silksong.GameLibs" Version="*-*" />
+		<PackageReference Include="Silksong.FsmUtil" Version="0.2.0" />
 	</ItemGroup>
 
 	<ItemGroup>

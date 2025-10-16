@@ -1,10 +1,6 @@
-using System.Linq;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using HutongGames.PlayMaker;
-using HutongGames.PlayMaker.Actions;
-using Silksong.FsmUtil;
 using UnityEngine;
 using Needleforge;
 using UnityEngine.SceneManagement;
