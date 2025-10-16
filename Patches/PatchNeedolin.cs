@@ -44,7 +44,7 @@ namespace HornetShermaSong.Patches
                 {
                     Method = (action) =>
                     {
-                        bool bellEquipped = NeedleforgePlugin.newTools[HornetShermaSongPlugin.shermaBellIndex].IsEquipped;
+                        bool bellEquipped = HornetShermaSongPlugin.shermaBell.IsEquipped;
                         if (bellEquipped)
                         {
                             needolinCancel.GetAction<Tk2dPlayAnimationWithEvents>(2).clipName = "";
@@ -57,7 +57,7 @@ namespace HornetShermaSong.Patches
                 {
                     Method = (action) =>
                     {
-                        bool bellEquipped = NeedleforgePlugin.newTools[HornetShermaSongPlugin.shermaBellIndex].IsEquipped;
+                        bool bellEquipped = HornetShermaSongPlugin.shermaBell.IsEquipped;
                         FsmString needolinClip = NeedolinFsm.GetFsmString("Play Clip");
                         if (AtBench.Value)
                         {
@@ -83,7 +83,7 @@ namespace HornetShermaSong.Patches
                 {
                     Method = (action) =>
                     {
-                        bool bellEquipped = NeedleforgePlugin.newTools[HornetShermaSongPlugin.shermaBellIndex].IsEquipped;
+                        bool bellEquipped = HornetShermaSongPlugin.shermaBell.IsEquipped;
                         FsmString needolinClip = NeedolinFsm.GetFsmString("Play Clip");
                         if (AtBench.Value)
                         {
@@ -110,7 +110,7 @@ namespace HornetShermaSong.Patches
 
                 ShermaBellQ.AddLambdaMethod((action) =>
                 {
-                    bool bellEquipped = NeedleforgePlugin.newTools[HornetShermaSongPlugin.shermaBellIndex].IsEquipped;
+                    bool bellEquipped = HornetShermaSongPlugin.shermaBell.IsEquipped;
                     if (bellEquipped)
                     {
                         startNeedolinProper.GetAction<StartNeedolinAudioLoop>(6).DefaultClip.Value = shermaSong;

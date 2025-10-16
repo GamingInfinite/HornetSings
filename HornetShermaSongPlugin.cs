@@ -9,6 +9,7 @@ using UnityEngine;
 using Needleforge;
 using UnityEngine.SceneManagement;
 using HornetShermaSong.Patches;
+using Needleforge.Data;
 
 namespace HornetShermaSong
 {
@@ -18,7 +19,7 @@ namespace HornetShermaSong
     {
         public static ManualLogSource logSource;
         public static AssetBundle modBundle;
-        public static int shermaBellIndex = 0;
+        public static ToolData shermaBell;
         public static GameObject Anim;
         public FsmTemplate _trackedNeedolin;
         public static Harmony harmony;
@@ -44,7 +45,7 @@ namespace HornetShermaSong
 
             Texture2D bellTex = ModHelper.LoadTexFromAssembly("HornetShermaSong.Resources.Images.hornetBell.png");
             Sprite bellSprite = Sprite.Create(bellTex, new(0,0,bellTex.width, bellTex.height), new(0.5f, 0.5f), 420f);
-            shermaBellIndex = NeedleforgePlugin.AddTool(bellSprite, ToolItemType.Yellow, "Sherma's Bell");
+            shermaBell = NeedleforgePlugin.AddTool(bellSprite, ToolItemType.Yellow, "Sherma's Bell");
 
 
             SceneManager.activeSceneChanged += OnSceneChange;
