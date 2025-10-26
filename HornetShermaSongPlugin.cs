@@ -41,7 +41,7 @@ namespace HornetShermaSong
 
             Texture2D bellTex = ModHelper.LoadTexFromAssembly("HornetShermaSong.Resources.Images.hornetBell.png");
             Sprite bellSprite = Sprite.Create(bellTex, new(0,0,bellTex.width, bellTex.height), new(0.5f, 0.5f), 420f);
-            shermaBell = NeedleforgePlugin.AddTool(bellSprite, ToolItemType.Yellow, "Sherma's Bell");
+            shermaBell = NeedleforgePlugin.AddTool("Sherma's Bell", ToolItemType.Yellow, bellSprite);
 
 
             SceneManager.activeSceneChanged += OnSceneChange;
