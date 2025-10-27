@@ -1,10 +1,10 @@
 {
     "name": "HornetSings",
-    "version_number": "0.2.0",
+    "version_number": "0.2.1",
     "website_url": "https://github.com/GamingInfinite/HornetSings",
     "description": "Play Sherma's bell and sing with him",
     "dependencies": [
-        "Voidlings-Needleforge-0.4.0",
+        "Voidlings-Needleforge-0.5.0",
 		"silksong_modding-Silksong_FsmUtil-0.2.0"
     ]
 }
