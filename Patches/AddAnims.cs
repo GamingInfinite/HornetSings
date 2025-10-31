@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
+using HornetSings;
 
-namespace HornetShermaSong.Patches
+namespace HornetSings.Patches
 {
     [HarmonyPatch(typeof(HeroController), nameof(HeroController.Start))]
     internal class AddAnims
@@ -9,7 +10,7 @@ namespace HornetShermaSong.Patches
         public static void Postfix(HeroController __instance)
         {
             tk2dSpriteAnimator animator = __instance.GetComponent<tk2dSpriteAnimator>();
-            tk2dSpriteAnimation newAnim = HornetShermaSongPlugin.Anim.GetComponent<tk2dSpriteAnimation>();
+            tk2dSpriteAnimation newAnim = HornetSingsPlugin.Anim.GetComponent<tk2dSpriteAnimation>();
             animator.Library.clips = [..animator.Library.clips, ..newAnim.clips];
         }
     }

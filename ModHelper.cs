@@ -1,29 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
-using System.Text;
 using UnityEngine;
 
-namespace HornetShermaSong
+namespace HornetSings
 {
     internal class ModHelper
     {
         public static void Log(string msg)
         {
-            HornetShermaSongPlugin.logSource.LogInfo(msg);
+            HornetSingsPlugin.logSource.LogInfo(msg);
         }
 
         public static void LogError(string msg)
         {
-            HornetShermaSongPlugin.logSource.LogError(msg);
+            HornetSingsPlugin.logSource.LogError(msg);
         }
 
-        public static AssetBundle LoadBundleFromAssembly(string resourceName)
+        public static AssetBundle? LoadBundleFromAssembly(string resourceName)
         {
             var asm = Assembly.GetExecutingAssembly();
 
-            using (Stream stream = asm.GetManifestResourceStream(resourceName))
+            using (Stream? stream = asm.GetManifestResourceStream(resourceName))
             {
                 if (stream == null)
                 {
