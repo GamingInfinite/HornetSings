@@ -40,6 +40,19 @@
         "resolved": "1.25.0",
         "contentHash": "jOclVb2PVoOdKafuzt3bJ3BHkbjsfuAx+60yqP4zCAhlNa1rwn1Jt05qrmqJgmBY42S08hXbps9KA6QR2Z7aOA=="
       },
+      "Needleforge": {
+        "type": "Direct",
+        "requested": "[0.5.2, )",
+        "resolved": "0.5.2",
+        "contentHash": "a9CX4zoZO5Ioc4WOBQLgSJITj4WvZkLoedBgOwwNGIvIvpQDHm5lcGucjEp8v6TvYzu6luMLy4wXqzGlgYtcwQ==",
+        "dependencies": {
+          "BepInEx.Core": "5.4.21",
+          "HarmonyX": "2.9.0",
+          "Silksong.FsmUtil": "0.3.0",
+          "Silksong.PrepatcherPlugin": "1.0.1",
+          "UnityEngine.Modules": "6000.0.50"
+        }
+      },
       "Silksong.FsmUtil": {
         "type": "Direct",
         "requested": "[0.3.0, )",
@@ -110,6 +123,16 @@
           "System.Reflection.Emit.ILGeneration": "4.7.0",
           "System.Reflection.Emit.Lightweight": "4.7.0",
           "System.Reflection.TypeExtensions": "4.7.0"
+        }
+      },
+      "Silksong.PrepatcherPlugin": {
+        "type": "Transitive",
+        "resolved": "1.0.1",
+        "contentHash": "kFmnjijc54GfssrKkO4RmhAqKoGqJ2sR05Kbd9+NXOEvXX4jvnsGfV//UVrWwFGfd5btBpjJ2sUP3Diq9B36bQ==",
+        "dependencies": {
+          "BepInEx.Core": "5.4.21",
+          "HarmonyX": "2.9.0",
+          "UnityEngine.Modules": "6000.0.50"
         }
       },
       "System.Collections": {
