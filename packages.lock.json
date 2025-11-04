@@ -42,9 +42,9 @@
       },
       "Needleforge": {
         "type": "Direct",
-        "requested": "[0.5.2, )",
-        "resolved": "0.5.2",
-        "contentHash": "a9CX4zoZO5Ioc4WOBQLgSJITj4WvZkLoedBgOwwNGIvIvpQDHm5lcGucjEp8v6TvYzu6luMLy4wXqzGlgYtcwQ==",
+        "requested": "[0.5.3, )",
+        "resolved": "0.5.3",
+        "contentHash": "9E+OVNCpOFhedqDRFVmpA3EsbxsLDGFSAtb79c42AQnyzDdc3bl/vetCC9L+3uH+URQs+rIJqRqXOF/M8dDkEA==",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
           "HarmonyX": "2.9.0",
