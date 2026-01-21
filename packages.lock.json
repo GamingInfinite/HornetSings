@@ -55,20 +55,20 @@
       },
       "Silksong.FsmUtil": {
         "type": "Direct",
-        "requested": "[0.3.0, )",
-        "resolved": "0.3.0",
-        "contentHash": "brvPf1qaAEJItbJJPgFWsypm9uG0aGEVhSsYwITXHR9bud7sxRWOreIJXLWTmyK7tM1DX72AnxV53v5CJsBdiQ==",
+        "requested": "[0.3.12, )",
+        "resolved": "0.3.12",
+        "contentHash": "HGncQoo+xyiSrlwAVjJg0okj1uWJm5ibtWjMdkJNy+ew7mJ+mY2DNA3+5i6qIw5/8OwtONBL0ByvLTo+VDHRjg==",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
-          "Silksong.GameLibs": "1.1.0-silksong1.0.28714",
+          "HarmonyX": "2.9.0",
           "UnityEngine.Modules": "6000.0.50"
         }
       },
       "Silksong.GameLibs": {
         "type": "Direct",
         "requested": "[*-*, )",
-        "resolved": "1.1.0-silksong1.0.28891",
-        "contentHash": "IplYreERpZ2m1zGFdfQYvzfjeJJ5KSTs7aVIdGhN0XjREfx4J3oq+vGmFBiH84ISxxKIggFu9ab2N0AMGl5xCA=="
+        "resolved": "1.2.0-silksong1.0.29315",
+        "contentHash": "MwcUC0FMUn7aCwYHWgQegOBxNGgNBDie9nfg0GeodqbnfrHOjUZ06sZjq+0Iiz9/WBL8yd511YZujFS91FgVMw=="
       },
       "UnityEngine.Modules": {
         "type": "Direct",
