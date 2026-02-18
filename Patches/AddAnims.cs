@@ -9,9 +9,15 @@ namespace HornetSings.Patches
         [HarmonyPostfix]
         public static void Postfix(HeroController __instance)
         {
-            tk2dSpriteAnimator animator = __instance.GetComponent<tk2dSpriteAnimator>();
             tk2dSpriteAnimation newAnim = HornetSingsPlugin.Anim.GetComponent<tk2dSpriteAnimation>();
-            animator.Library.clips = [..animator.Library.clips, ..newAnim.clips];
+            newAnim.isValid = false;
+            newAnim.ValidateLookup();
+            
+            tk2dSpriteAnimation heroAnim = __instance.AnimCtrl.animator.Library;
+            
+            heroAnim.clips = [.. heroAnim.clips, .. newAnim.clips];
+            heroAnim.isValid = false;
+            heroAnim.ValidateLookup();
         }
     }
 }
